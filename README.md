@@ -7,9 +7,9 @@ Contains source code for https://arxiv.org/abs/2305.06695 - Visual dataset is av
 ```
   python train.py --out_path=output/ --folds_file=datasets/OpenSetForams/splits/all_32_classes.json --img_rows=224 --img_cols=224 --model=TripletResnetSoftmax --learning_rate=0.001 --embedding_size=128 --logs_freq=20 --num_epochs=30 --eval_freq=2 --batch_size=16 --loss_function=OnlineReciprocalSoftmaxLoss
 ```
-```
+
 3. To train with Genetic Anchors, use loss_cosine.py (in place of loss.py) and utils_dna.py (in place of utils.py)
-```
+
 4. To visualize embeddings with tsne, run command such as:
 ```
   python visualise_embeddings.py --model_path=output/full_data_rotation_augmented/best_model_state.pkl --dataset=Forams --batch_size=1 --embedding_size=128 --current_fold=0 --folds_file=datasets/OpenSetCows2020/splits/all_35_classes.json --save_path=output/fold_0
