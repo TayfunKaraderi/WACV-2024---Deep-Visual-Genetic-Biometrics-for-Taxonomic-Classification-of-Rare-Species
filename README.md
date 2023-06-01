@@ -5,7 +5,7 @@ Contains source code for https://arxiv.org/abs/2305.06695 - Visual dataset is av
 1. Download forams dataset from http://endlessforams.org, cut text and borders out using processing.py. Then, place those files into datasets folder in train and test folders.
 2. To train with full dataset, run command such as:
 ```
-  python train.py --out_path=output/ --folds_file=datasets/OpenSetForams/splits/all_32_classes.json --img_rows=224 --img_cols=224 --model=TripletResnetSoftmax --learning_rate=0.001 --embedding_size=128 --logs_freq=20 --num_epochs=30 --eval_freq=2 --batch_size=16 --loss_function=OnlineReciprocalSoftmaxLoss
+  python train.py --out_path=output/ --folds_file=datasets/splits/all_32_classes.json --img_rows=224 --img_cols=224 --model=TripletResnetSoftmax --learning_rate=0.001 --embedding_size=128 --logs_freq=20 --num_epochs=30 --eval_freq=2 --batch_size=16 --loss_function=OnlineReciprocalSoftmaxLoss
 ```
 
 3. To train with Genetic Anchors, use loss_cosine.py (in place of loss.py) and utils_dna.py (in place of utils.py)
