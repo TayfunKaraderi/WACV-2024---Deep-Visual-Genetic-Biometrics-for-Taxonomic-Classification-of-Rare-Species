@@ -12,9 +12,9 @@ Contains source code for https://arxiv.org/abs/2305.06695 - Visual dataset is av
 
 4. To visualize embeddings with tsne, run command such as:
 ```
-  python visualise_embeddings.py --model_path=output/full_data_rotation_augmented/best_model_state.pkl --dataset=Forams --batch_size=1 --embedding_size=128 --current_fold=0 --folds_file=datasets/OpenSetCows2020/splits/all_35_classes.json --save_path=output/fold_0
+  python visualise_embeddings.py --model_path=output/full_data_rotation_augmented/best_model_state.pkl --dataset=Forams --batch_size=1 --embedding_size=128 --current_fold=0 --folds_file=datasets/splits/all_35_classes.json --save_path=output/fold_0
 ```
 5. To obtain test set performance, run command such as:
 ```
-python test_save.py --model_path=output/augmentations/ALL_AUG_ep10/best_model_state.pkl --dataset=Forams --batch_size=16 --embedding_size=128 --current_fold=0 --folds_file=datasets/OpenSetCows2020/splits/all_35_classes.json --save_path=output/full_data_rotation_augmented
+python test_save.py --model_path=output/augmentations/ALL_AUG_ep10/best_model_state.pkl --dataset=Forams --batch_size=16 --embedding_size=128 --current_fold=0 --folds_file=datasets/splits/all_35_classes.json --save_path=output/full_data_rotation_augmented
 ```
