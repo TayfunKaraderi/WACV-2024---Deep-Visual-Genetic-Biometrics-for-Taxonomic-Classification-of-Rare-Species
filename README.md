@@ -8,7 +8,7 @@ Contains source code for https://arxiv.org/abs/2305.06695 - Visual dataset is av
   python train.py --out_path=output/ --folds_file=datasets/splits/all_32_classes.json --img_rows=224 --img_cols=224 --model=TripletResnetSoftmax --learning_rate=0.001 --embedding_size=128 --logs_freq=20 --num_epochs=30 --eval_freq=2 --batch_size=16 --loss_function=OnlineReciprocalSoftmaxLoss
 ```
 
-3. To train with genetic anchors, use loss_cosine.py (in place of loss.py) and utils_dna.py (in place of utils.py). Model weights for the results table are provided in the output file. 
+3. To train with genetic anchors, use loss_cosine.py (in place of loss.py) and utils_dna.py (in place of utils.py) and train_dna.py(instead of train.py). Model weights for the results table are provided in the output file. 
 
 4. To visualize embeddings with tsne, run command such as:
 ```
